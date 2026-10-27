@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mesh_to_points"
+version = "0.1.0"
+description = "Turn a container mesh into an ordered, region-aware wiping point set (position + tool/normal directions)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "trimesh>=4.0",
+    "shapely>=2.0",
+    "rtree",
+    "networkx",
+    "plotly>=5.0",
+    "matplotlib>=3.6",
+]
+
+[project.optional-dependencies]
+fast = ["embreex", "potpourri3d"]
+shapes = ["manifold3d"]
+dev = ["pytest"]
+
+[project.scripts]
+mesh2points = "mesh_to_points.cli:main"
+mesh2points-shapes = "mesh_to_points.shapes:main"
+
+[tool.setuptools.packages.find]
+include = ["mesh_to_points*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
