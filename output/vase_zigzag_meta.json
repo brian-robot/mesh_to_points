@@ -1,0 +1,108 @@
+{
+  "params": {
+    "source": "vase.ply",
+    "spacing": 0.01,
+    "row_spacing": 0.01,
+    "margin": 0.005,
+    "pattern": "zigzag",
+    "order": "none",
+    "include": [
+      "rim",
+      "inner_wall",
+      "tread",
+      "inner_floor"
+    ],
+    "exclude": [],
+    "reachable_only": true,
+    "up": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "scale": 1.0,
+    "continuous": false,
+    "zigzag_angle": 0.0,
+    "top_angle": 45.0,
+    "bottom_angle": 45.0,
+    "crease_angle": 15.0,
+    "normal_smoothing": 30.0,
+    "units": "m"
+  },
+  "stats": {
+    "n_points": 806,
+    "n_strokes": 28,
+    "path_length": 8.069277859397221,
+    "nn_mean": 0.009917392320440048,
+    "nn_median": 0.009948108053330107,
+    "nn_min": 0.006110411945232662,
+    "nn_max": 0.010106130768153684,
+    "step_mean": 0.00993909862741893,
+    "step_min": 0.006110411945232662,
+    "step_max": 0.010106209656924962,
+    "n_jumps": 27,
+    "points_per_region": {
+      "rim": 51,
+      "inner_wall": 718,
+      "inner_floor": 37
+    },
+    "time_prepare": 0.2120380401611328,
+    "time_segment": 0.2121601104736328,
+    "time_sample": 0.40130615234375,
+    "time_order": 0.00011992454528808594,
+    "time_total": 0.8266005516052246,
+    "n_faces": 63648,
+    "selected_area": 0.08490705416000091
+  },
+  "regions": [
+    {
+      "region": "rim",
+      "faces": 1152,
+      "area": 0.006029944286563366,
+      "components": 1,
+      "levels": [
+        0
+      ],
+      "reachable_area": 0.006029944286563366
+    },
+    {
+      "region": "inner_wall",
+      "faces": 32256,
+      "area": 0.07499403521701843,
+      "components": 1,
+      "levels": [
+        1
+      ],
+      "reachable_area": 0.07499403521701843
+    },
+    {
+      "region": "inner_floor",
+      "faces": 3312,
+      "area": 0.0038830746564191172,
+      "components": 1,
+      "levels": [
+        1
+      ],
+      "reachable_area": 0.0038830746564191172
+    },
+    {
+      "region": "outer_wall",
+      "faces": 22752,
+      "area": 0.09519143941526424,
+      "components": 1,
+      "levels": [
+        0
+      ],
+      "reachable_area": 0.0
+    },
+    {
+      "region": "bottom",
+      "faces": 4176,
+      "area": 0.006359706657944931,
+      "components": 1,
+      "levels": [
+        0
+      ],
+      "reachable_area": 0.0
+    }
+  ]
+}
